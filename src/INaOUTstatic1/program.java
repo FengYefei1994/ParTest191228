@@ -1,5 +1,5 @@
 //¾²Ì¬ÄÚ²¿Àà
-package INaOUT.static1;
+package INaOUTstatic1;
 
 public class program {
 	public static void main(String[] args) {

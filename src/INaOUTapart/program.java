@@ -1,6 +1,6 @@
 //成员内部类
 
-package INaOUT.apart;
+package INaOUTapart;
 
 public class program {
 	public static void main(String[] args) {

@@ -1,5 +1,5 @@
 //局部内部类
-package INaOUT.local;
+package INaOUTlocal;
 
 public class program {
 	public static void main(String[] args) {
