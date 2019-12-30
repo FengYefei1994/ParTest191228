@@ -1,9 +1,9 @@
-/*this:¶Ôµ±Ç°¶ÔÏóµÄÒıÓÃ
- * 1¡¢ÓÃÔÚ·Ç¾²Ì¬·½·¨ÖĞ£¬Ë­ÓÃµ÷ÓÃÕâ¸ö·½·¨£¬this´ú±íË­
- * 2¡¢ÔÚ¹¹Ôì·½·¨ÖĞ£¬this±íÊ¾±»ÊµÀı»¯µÄ¶ÔÏó
+/*this:å¯¹å½“å‰å¯¹è±¡çš„å¼•ç”¨
+ * 1ã€ç”¨åœ¨éé™æ€æ–¹æ³•ä¸­ï¼Œè°ç”¨è°ƒç”¨è¿™ä¸ªæ–¹æ³•ï¼Œthisä»£è¡¨è°
+ * 2ã€åœ¨æ„é€ æ–¹æ³•ä¸­ï¼Œthisè¡¨ç¤ºè¢«å®ä¾‹åŒ–çš„å¯¹è±¡
  * 
- * thisÒıÓÃ¾ÍÊÇ¶ÔÒ»¸ö¶ÔÏóµÄÒıÓÃ
- * ·½·¨ÌåÖØÊ¹ÓÃreturn thisĞÎÊ½Îª½«ÀàµÄ¶ÔÏó½øĞĞ·µ»Ø
+ * thiså¼•ç”¨å°±æ˜¯å¯¹ä¸€ä¸ªå¯¹è±¡çš„å¼•ç”¨
+ * æ–¹æ³•ä½“é‡ä½¿ç”¨return thiså½¢å¼ä¸ºå°†ç±»çš„å¯¹è±¡è¿›è¡Œè¿”å›
  */
 
 package This;
@@ -11,33 +11,33 @@ package This;
 public class Program1 {
 	public static void main(String[] args) {
 		Person xiaoming=new Person();
-		xiaoming.show();                             //xiaoming¶ÔÏóµ÷ÓÃshow()·½·¨£¬this´ú±íxiaoming
+		xiaoming.show();                             //xiaomingå¯¹è±¡è°ƒç”¨show()æ–¹æ³•ï¼Œthisä»£è¡¨xiaoming
 		System.out.println(xiaoming.name);
 		
-		Person wang=new Person("Íõ",10,'ÄĞ');
+		Person wang=new Person("é”Ÿæ–¤æ‹·",10,'ç”·');
 		System.out.println(wang.name);
 		
 	}
 
 }
-//¾Ö²¿±äÁ¿²»ÔÊĞí×÷ÓÃÓòÖØµş
-//È«¾Ö±äÁ¿×÷ÓÃÓòÓë¾Ö²¿±äÁ¿×÷ÓÃÓò²»»áÖØµş£¬Ãû³ÆÏàÍ¬¶øÒÑ
+//å±€éƒ¨å˜é‡ä¸å…è®¸ä½œç”¨åŸŸé‡å 
+//å…¨å±€å˜é‡ä½œç”¨åŸŸä¸å±€éƒ¨å˜é‡ä½œç”¨åŸŸä¸ä¼šé‡å ï¼Œåç§°ç›¸åŒè€Œå·²
 class Person{
-	String name;                             //È«¾Ö±äÁ¿¡¢ÊôĞÔ²ÎÊı£»²ÎÊı¿ª±ÙÔÚÕ»ÖĞ
+	String name;                              //å…¨å±€å˜é‡ã€å±æ€§å‚æ•°ï¼›å‚æ•°å¼€è¾Ÿåœ¨æ ˆä¸­
 	int age;
 	char gender;
 	
 	
-	Person(String name,int a,char c){          //ĞÎ²ÎÃû³Æ±ÜÃâÓëÊôĞÔÃû³ÆÏàÍ¬£¬·ñÔòwarning±äÁ¿ÎŞĞ§
-		 this.name=name;                       //Èô²ÎÊıÓÃname£¬ºóĞø¶¨Òå±äÁ¿name°´¾Í½üÔ­Ôò£¬ÓÃµÄÊÇĞÎ²Îname£¬Çø·ÖÊ±ÓÃthisÖ¸Õë	
+	Person(String name,int a,char c){          //å½¢å‚åç§°é¿å…ä¸å±æ€§åç§°ç›¸åŒï¼Œå¦åˆ™warningå˜é‡æ— æ•ˆ
+		 this.name=name;                       //è‹¥å‚æ•°ç”¨nameï¼Œåç»­å®šä¹‰å˜é‡nameæŒ‰å°±è¿‘åŸåˆ™ï¼Œç”¨çš„æ˜¯å½¢å‚nameï¼ŒåŒºåˆ†æ—¶ç”¨thisæŒ‡é’ˆ	
 	}
 	
 	Person(){
-		this.name="";//´ËÊ±this¿ÉÒÔÊ¡ÂÔ£¬ÎŞ±äÁ¿ÆçÒå£»Ö»ÓÃÖªµÀ
+		this.name="";                         //æ­¤æ—¶thiså¯ä»¥çœç•¥ï¼Œæ— å˜é‡æ­§ä¹‰ï¼›åªç”¨çŸ¥é“
 		name="";
 	}
 	
 	void show() {
-		this.name="Ğ¡Ã÷";
+		this.name="å°æ˜";
 	}	
 }

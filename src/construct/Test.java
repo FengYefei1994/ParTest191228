@@ -2,13 +2,13 @@ package construct;
 
 public class Test {
 	public static void main(String[] args) {
-		//³¢ÊÔµ÷ÓÃ¹¹Ôì·½·¨£»ÔÚÊµÀý»¯¶ÔÏóÊ±¹¹Ôì·½·¨±»×Ô¶¯µ÷ÓÃ
+		//ï¿½ï¿½ï¿½Ôµï¿½ï¿½Ã¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
 		//Person xiaoming=new Person();
 		//Person le=new Person("X");
 		
 		
-		//ÊµÀý¶ÔÏóµÄÍ¬Ê±£¬¶ÔÊôÐÔ½øÐÐ³õÊ¼»¯¸³Öµ
-		Person xiaoming=new Person("Ð¡Ã÷",12,'ÄÐ');
-		System.out.println("ÐÕÃû£º"+xiaoming.name+"£¬ÄêÁä£º"+xiaoming.age+"£¬ÐÔ±ð£º"+xiaoming.gender+"¡£");
+		//Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½Ð³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Öµ
+		Person xiaoming=new Person("Ð¡ï¿½ï¿½",12,'ç”·');
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+xiaoming.name+"ï¿½ï¿½ï¿½ï¿½ï¿½ä£º"+xiaoming.age+"ï¿½ï¿½ï¿½Ô±ï¿½"+xiaoming.gender+"ï¿½ï¿½");
 	}
 }

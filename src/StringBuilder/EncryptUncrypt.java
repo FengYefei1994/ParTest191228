@@ -1,25 +1,25 @@
-//ÊµÏÖ×Ö·û´®¼ÓÃÜ
+//å®ç°å­—ç¬¦ä¸²åŠ å¯†
 
 package StringBuilder;
 
 public class EncryptUncrypt {                             
-	public static String EAndU(String value,char secret){         //¶Ôvalue¼ÓÃÜ£¬secretÃÜÎÄ×Ö·û
-		byte[] bt = value.getBytes();                             //½«ĞèÒª¼ÓÃÜµÄÄÚÈİ×ª»»Îª×Ö½ÚÊı×é
+	public static String EAndU(String value,char secret){         //å¯¹valueåŠ å¯†ï¼Œsecretå¯†æ–‡å­—ç¬¦
+		byte[] bt = value.getBytes();                             //å°†éœ€è¦åŠ å¯†çš„å†…å®¹è½¬æ¢ä¸ºå­—èŠ‚æ•°ç»„
 		for(int i=0;i<bt.length;i++) {
-			bt[i]=(byte)(bt[i]^(int)secret);                      //Í¨¹ıÒì»òÔËËã¼ÓÃÜ£»Á½´ÎÒì»òºóµÃµ½±¾Éí£¨ÔËËã¹æÂÉ£©
+			bt[i]=(byte)(bt[i]^(int)secret);                       //é€šè¿‡å¼‚æˆ–è¿ç®—åŠ å¯†ï¼›ä¸¤æ¬¡å¼‚æˆ–åå¾—åˆ°æœ¬èº«ï¼ˆè¿ç®—è§„å¾‹ï¼‰
 		}
 		return new String(bt,0,bt.length);
 	}
 	
 
 	public static void main(String[] args) {
-		String value="ÎÒ°®JAVA";                                  //ĞèÒª¼ÓÃÜÎÄ×Ö
-		char secert ='Æí';                                         //ÃÜÎÄ×Ö·û
-		System.out.println("Ô­×Ö·û´®Îª£º"+value);
-		String encrypt=EncryptUncrypt.EAndU(value,secert);       //¼ÓÃÜ
-		System.out.println("¼ÓÃÜºóµÄÖµ£º"+encrypt);
-		String uncrypt=EncryptUncrypt.EAndU(encrypt,secert);       //½âÃÜ
-		System.out.println("½âÃÜºóµÄÖµ£º"+uncrypt);
+		String value="æˆ‘çˆ±JAVA";                                  //éœ€åŠ å¯†æ–‡å­—
+		char secert ='ç¥ˆ';                                             //å¯†æ–‡å­—ç¬¦
+		System.out.println("åŸå­—ç¬¦ä¸²ä¸ºï¼š"+value);
+		String encrypt=EncryptUncrypt.EAndU(value,secert);           //åŠ å¯†
+		System.out.println("åŠ å¯†åçš„å€¼ï¼š"+encrypt);
+		String uncrypt=EncryptUncrypt.EAndU(encrypt,secert);         //è§£å¯†
+		System.out.println("è§£å¯†åçš„å€¼ï¼š"+uncrypt);
 		
 	}
 }
