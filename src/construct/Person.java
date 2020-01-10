@@ -20,20 +20,20 @@ public class Person {
 	String name;
 	int age;
 	char gender;
-	
-	/*
-	 *构造方法：由于没有参数，因此被称为无参构造；输出是固定的
-	 */
-	Person(){
+
+	//无参构造：没有参数（构造方法）
+	public Person(){
 		System.out.println("随便啦！");
 	}
-	/*
-	 *构造方法：有参数，有参构造；输出通过参数传递更改
-	 */
 
+	
+	//有参构造：有参数（构造方法）；输出通过参数传递更改
 	Person(String name){
 		System.out.println(name);
 	}
+	
+	//以上有参、无参两个方法为重载
+	
 	
 	Person(String n,int a,char c){
 		name=n;

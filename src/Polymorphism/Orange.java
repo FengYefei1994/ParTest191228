@@ -1,4 +1,4 @@
-package lesson9;
+package Polymorphism;
 
 public class Orange extends Fruit{
 	@Override

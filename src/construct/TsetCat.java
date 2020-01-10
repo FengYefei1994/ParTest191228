@@ -1,5 +1,11 @@
 package construct;
 
+/**
+ * Lesson7
+ * 1、重写equals方法；
+ * 2、权限修饰符应用
+ */
+
 import java.awt.Color;
 
 public class TsetCat {

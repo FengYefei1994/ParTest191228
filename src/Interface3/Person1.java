@@ -4,7 +4,7 @@
  */
 
 //extends: 继承
-//implements:接口使用
+//implements:接口
 
 package Interface3;
 

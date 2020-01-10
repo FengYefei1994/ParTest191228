@@ -1,4 +1,10 @@
 package construct;
+
+/**
+ * 1、重写equals方法；
+ * 2、权限修饰符应用
+ */
+
 import java.awt.Color;
 
 public class Cat{
@@ -25,6 +31,8 @@ public class Cat{
 		Cat cat=(Cat)obj;
 		return name.equals(cat.name)&&(age==cat.age)&&(weight==cat.weight)&&(color.equals(cat.color));
 	}
+
+	@Override
 	public int hashCode(){
 		return 7*name.hashCode()+11* new Integer(age).hashCode()+13*new Double(weight).hashCode()+17*color.hashCode();
 		}

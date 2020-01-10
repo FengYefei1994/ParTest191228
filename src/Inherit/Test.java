@@ -4,7 +4,8 @@ import java.util.Date;
 public class Test {
 
 	public static void main(String[] args) {
-		Employee employee =new Employee();          //父类中定义对象实例化（非静态需通过对象实例化引用）
+        //父类中定义对象实例化（非静态需通过对象实例化引用）
+		Employee employee =new Employee();
 		employee.setName("Java");
 		employee.setsalary(1000);
 		employee.setbirthday(new Date());
